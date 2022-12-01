@@ -29,6 +29,7 @@ The data is a collection of 11 .csv files
 ## Exploratory Data Analysis
 
 -	The 2 main student countries are India and the US.
+![Number of students per country](images/Nb students per country.png)
 -	There are 5 main subscription peaks corresponding to 365 data science special events like Winter Sales 2022. There is also a lesser peak for the platform gamification introduction.
 -	There are 2 registration peaks in June and mid-August. They are also related to 365 data science special events, respectively Data Science Summer Campaign 2022 and Most Wanted Campaign.
 -	There is a peak of video watching mid-august.
