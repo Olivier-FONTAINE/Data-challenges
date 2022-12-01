@@ -33,6 +33,7 @@ The data is a collection of 11 .csv files
 -	There are 5 main subscription peaks corresponding to 365 data science special events like Winter Sales 2022. There is also a lesser peak for the platform gamification introduction.
 -	![Number of subscriptions over time](images/Nb_subscriptions_over_time.png?raw=true "Nb subscriptions over time")
 -	There are 2 registration peaks in June and mid-August. They are also related to 365 data science special events, respectively Data Science Summer Campaign 2022 and Most Wanted Campaign.
+-	![Number of subscriptions over time](images/Nb_subscriptions_over_time.png?raw=true "Nb subscriptions over time")
 -	There is a peak of video watching mid-august.
 -	Almost all courses are well noted. We should not get much information from those ratings.
 -	In the exam info table, there are a lot of missing values for the exam category. It could be interesting to know which exams are course/career track exam vs practice exam. We might infer those category by relating exam completion date with course watched in the days preceding the exam.
