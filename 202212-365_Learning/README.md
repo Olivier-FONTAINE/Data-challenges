@@ -1,6 +1,6 @@
 # Predict whether a Free Learning Plan user would convert to a paid subscriber or not.
 
-![365 Data Science](images/365 data science img.jpg?raw=true "365 Data Science learning platform")
+![365 Data Science](images/365_data_science.jpg?raw=true "365 Data Science learning platform")
 
 <img src="/images/365 data science img.jpg" alt="Employee data" title="Employee Data title">
 
