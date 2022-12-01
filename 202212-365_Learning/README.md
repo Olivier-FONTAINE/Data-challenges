@@ -46,7 +46,36 @@ The data is a collection of 11 .csv files
 
 From the last insight, I decided to build the ML-ready dataset based on student registration and their behavior for the next 14 days. The target variable being the Boolean “subscribed” during this 14 days period.
 
-## Choice of evaluation metric
+## Exploratory Data Analysis (ML-ready dataset)
+
+The target variable (subscribed) is very imbalanced:
+- 6% of the students subscribed within the first 14 days after registration
+- 94% did not
+
+![Target variable distribution](images/Subscribed_distribution.png?raw=true "Target variable distribution")
+
+Here are the relationships between the target variable and 2 others variables:
+- Average exams score
+- Number of days with video watching within the first 14 days after registration
+
+![Target variable & Average exams score & Number of days with videos](images/Corr_target_var_and_avg_exam_res_and_watch_days.png?raw=true "Target variable & Average exams score & Number of days with videos")
+
+We can see that the more you watch videos, the more you convert to a paid subscriber. There seems to be also a link with the vaerage exams score.
+
+Here is the correlation matrix:
+
+![Correlation matrix](images/Corr_analysis.png?raw=true "Correlation matrix")
+
+"Average exams results" and "is engaged with exams" are very correlated.
+"Average exams results" feature is removed from the dataset.
+
+Here are all pairplots for all features couples:
+
+![All relationships](images/Relationships_between_variables.png?raw=true "All relationships")
+
+Watched days and engagement seems correlated.
+
+## Choice of the evaluation metric
 
 As I get eventually a very imbalanced classification (6% who subscribed/94% who did not subscribe), I have to choose the right evaluation metric. Accuracy should not be used as any naïve algorithm that would predict “100% student did not subscribe” would get around a 94% accuracy… 
 
