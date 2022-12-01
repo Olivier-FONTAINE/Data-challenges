@@ -25,3 +25,13 @@ The data is a collection of 11 .csv files
 - 365_exam_info.csv
 - 365_student_engagement.csv
 - 365_student_hub_questions.csv
+
+## Exploratory Data Analysis
+
+-	The 2 main student countries are India and the US.
+-	There are 5 main subscription peaks corresponding to 365 data science special events like Winter Sales 2022. There is also a lesser peak for the platform gamification introduction.
+-	There are 2 registration peaks in June and mid-August. They are also related to 365 data science special events, respectively Data Science Summer Campaign 2022 and Most Wanted Campaign.
+-	There is a peak of video watching mid-august.
+-	Almost all courses are well noted. We should not get much information from those ratings.
+-	In the exam info table, there are a lot of missing values for the exam category. It could be interesting to know which exams are course/career track exam vs practice exam. We might infer those category by relating exam completion date with course watched in the days preceding the exam.
+-	Students generally convert after 2 weeks after entering the platform (this assumption was also provided in the guided instructions).
