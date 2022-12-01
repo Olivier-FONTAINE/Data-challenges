@@ -35,6 +35,7 @@ The data is a collection of 11 .csv files
 -	There are 2 registration peaks in June and mid-August. They are also related to 365 data science special events, respectively Data Science Summer Campaign 2022 and Most Wanted Campaign.
 ![Number of registrations over time](images/Nb_registrations_over_time.png?raw=true "Nb registrations over time")
 -	There is a peak of video watching mid-august.
+![Number of days of video watched over time](images/Nb_video_watched_days_over_time.png?raw=true "Number of days of video watched over time")
 -	Almost all courses are well noted. We should not get much information from those ratings.
 ![Course ratings distribution](images/Course_ratings_distribution.png?raw=true "Course ratings distribution")
 -	In the exam info table, there are a lot of missing values for the exam category. It could be interesting to know which exams are course/career track exam vs practice exam. We might infer those category by relating exam completion date with course watched in the days preceding the exam.
