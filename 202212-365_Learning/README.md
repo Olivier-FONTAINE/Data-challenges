@@ -7,7 +7,7 @@ https://learn.365datascience.com/
 
 ![365 Data Science](images/365_data_science.jpg?raw=true "365 Data Science learning platform")
 
-Students learn by watching video content, then evaluate their knowledge by taking quizzes, practice exams, course exams, and career track exams.
+👨‍🎓 👩‍🎓 Students learn by watching video content, then evaluate their knowledge by taking quizzes, practice exams, course exams, and career track exams.
 
 🎯 The challenge is to build a machine learning model to predict whether a Free Plan user would convert to a paid subscriber or not.
 
