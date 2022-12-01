@@ -105,17 +105,34 @@ I evaluated 4 classifiers:
 
 They are trained based on the recall metric.
 
+## Models evaluation
+
 Here are the tests results:
 
 ![Evaluation results](images/Evaluation_results.jpg?raw=true "Evaluation results")
 
 ![Evaluation results](images/Evaluation_results-Recall.jpg?raw=true "Evaluation results")
 
+Here is the confusion metrix for the best model based on LightGBM:
+
+![Confusion matrix](images/Confusion_matrix.jpg?raw=true "Confusion matrix")
+
+So, we have 199 True Positive, they are the students who are likely to convert. 365 Data Science needs to encourage them with offers.
+And we have 228 False Negative, they are the sudents who did not receive any offers but they were likely to convert.
+Recall = # True positives / # positives = TP / (TP+FN) = 199 / (199+228) = 0.46
+And finally, we have the 60 False Negative, they are the sudents who did receive offers but they were not likely to convert.
+
+Now, look at the Precision and Recall versus the decision threshold:
+
+![Precision Recall](images/Precision_Recall.jpg?raw=true "Precision Recall")
+
+The decision threshold should be adapted to foster a lesser number of False Negative in order to better target them.
+
 ## Final comments
 
 What I could have done (if time permits):
 -	During EDA, I haven’t performed any hypothesis testing.
--	During preprocessing, 
--	Oversampling
+-	During preprocessing, I have not run a proper features selection. 
+-	I have not performed Oversampling/Undersampling techniques.
 
-I am wondering if 365 Data Science experiment A/B testing: does gamifications increased engagements and then subscriptions?
+An experiment that 365 Data Science could do would be an A/B test: does gamification increase engagements and then subscriptions?
