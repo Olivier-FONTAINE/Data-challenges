@@ -44,7 +44,7 @@ The data is a collection of 11 .csv files
 
 ## Data modeling & ML-ready dataset building
 
-From the last insight, I decided to build the ML-ready dataset based on student registration and their behavior for the next 14 days. The target variable being the Boolean “subscribed” during this 14 days period.
+From the last insight, I decided to build the ML-ready dataset based on student registration and their behavior for the next 14 days. The target variable being the boolean “subscribed” during this 14 days period.
 
 ## Exploratory Data Analysis (ML-ready dataset)
 
@@ -60,20 +60,22 @@ Here are the relationships between the target variable and 2 others variables:
 
 ![Target variable & Average exams score & Number of days with videos](images/Corr_target_var_and_avg_exam_res_and_watch_days.png?raw=true "Target variable & Average exams score & Number of days with videos")
 
-We can see that the more you watch videos, the more you convert to a paid subscriber. There seems to be also a link with the vaerage exams score.
+We can see that the more you watch videos, the more you convert to a paid subscriber. 
+There seems to be also a link with the average exams score.
 
 Here is the correlation matrix:
 
 ![Correlation matrix](images/Corr_analysis.png?raw=true "Correlation matrix")
 
-"Average exams results" and "is engaged with exams" are very correlated.
-"Average exams results" feature is removed from the dataset.
+💡"Average exams results" and "is engaged with exams" are very correlated features.
+💡"Engagement_days" and "is engaged with exams" are very correlated features.
+"Average exams results" and "Engagement_days" features are removed from the dataset.
 
 Here are all pairplots for all features couples:
 
 ![All relationships](images/Relationships_between_variables.png?raw=true "All relationships")
 
-Watched days and engagement seems correlated.
+💡 Watched days and engagement seems correlated.
 
 ## Choice of the evaluation metric
 
