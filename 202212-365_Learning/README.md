@@ -1,4 +1,7 @@
-# Predict whether a Free Learning Plan user would convert to a paid subscriber or not
+# Predict whether a Free Learning Plan user would convert to a paid subscriber or not.
+
+![365 Data Science](/images/365 data science img.jpg?raw=true "365 Data Science learning platform")
+
 ## Introduction to the data challenge:
 
 365 Data Science is an online learning platform specializing in data science courses.
