@@ -80,7 +80,8 @@ Here are all pairplots for all features couples:
 
 As I get eventually a very imbalanced classification (6% who subscribed/94% who did not subscribe), I have to choose the right evaluation metric. Accuracy should not be used as any naïve algorithm that would predict “100% student did not subscribe” would get around a 94% accuracy… 
 
-I used the recall metric instead. I could have used other metrics for imbalanced dataset such as imbalanced accuracy, F1 or F2 score. Recall is the fraction of subscribed students that are successfully retrieved (TP/(TP+FN)).
+I used the recall metric instead. I could have used other metrics for imbalanced dataset such as imbalanced accuracy, F1 or F2 score. Recall is the fraction of subscribed students that are successfully retrieved.
+📝 Recall = # True positives / # positives = TP / (TP+FN).
 
 The other tricks for imbalanced classification to preserve the same ratio of the target variable in different sets are:
 -	stratified splits for train/test split
@@ -90,7 +91,7 @@ The other tricks for imbalanced classification to preserve the same ratio of the
 
 Features are not on the same scale:
 
-![Features scales](images/Features_scale.png?raw=true "Features scales")
+![Features scales](images/Features_scale.jpg?raw=true "Features scales")
 
 💡 We will apply features scaling in our ML pipeline in order to have features on the same scale for most of our ML algorithms. 
 
@@ -102,7 +103,13 @@ I evaluated 4 classifiers:
 -	Random Forest
 -	LightGBM
 
+They are trained based on the recall metric.
 
+Here are the tests results:
+
+![Evaluation results](images/Evaluation_results.jpg?raw=true "Evaluation results")
+
+![Evaluation results](images/Evaluation_results-Recall.jpg?raw=true "Evaluation results")
 
 ## Final comments
 
