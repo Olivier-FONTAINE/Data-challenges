@@ -117,16 +117,17 @@ Here is the confusion metrix for the best model based on LightGBM:
 
 ![Confusion matrix](images/Confusion_matrix.jpg?raw=true "Confusion matrix")
 
-So, we have 199 True Positive, they are the students who are likely to convert. 365 Data Science needs to encourage them with offers.
-And we have 228 False Negative, they are the sudents who did not receive any offers but they were likely to convert.
-Recall = # True positives / # positives = TP / (TP+FN) = 199 / (199+228) = 0.46
-And finally, we have the 60 False Negative, they are the sudents who did receive offers but they were not likely to convert.
+💡 So, 
+- we have 199 True Positive, they are the students who are likely to convert. 365 Data Science needs to encourage them with offers.
+- we have 228 False Negative, they are the sudents who did not receive any offers but they were likely to convert.
+  Recall = # True positives / # positives = TP / (TP+FN) = 199 / (199+228) = 0.46
+- we have the 60 False Negative, they are the sudents who did receive offers but they were not likely to convert.
 
 Now, look at the Precision and Recall versus the decision threshold:
 
 ![Precision Recall](images/Precision_Recall.jpg?raw=true "Precision Recall")
 
-The decision threshold should be adapted to foster a lesser number of False Negative in order to better target them.
+💡 The decision threshold should be adapted to foster a lesser number of False Negative in order to better target them and increase revenue.
 
 ## Final comments
 
