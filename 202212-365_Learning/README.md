@@ -87,6 +87,10 @@ The other tricks for imbalanced classification to preserve the same ratio of the
 -	stratified splits for train/test split
 -	stratified K fold for validation
 
+## Pre-processing
+
+Features are not on the same scale.
+
 ## Model building
 
 I evaluated 4 classifiers: 
