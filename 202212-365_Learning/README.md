@@ -26,7 +26,7 @@ The data is a collection of 11 .csv files
 - 365_student_engagement.csv
 - 365_student_hub_questions.csv
 
-## Exploratory Data Analysis
+## Exploratory Data Analysis (single datasets)
 
 -	The 2 main student countries are India and the US.
 ![Number of students per country](images/Nb_students_per_country.png?raw=true "Nb students per country")
@@ -41,3 +41,36 @@ The data is a collection of 11 .csv files
 -	In the exam info table, there are a lot of missing values for the exam category. It could be interesting to know which exams are course/career track exam vs practice exam. We might infer those category by relating exam completion date with course watched in the days preceding the exam.
 -	Students generally convert after 2 weeks after entering the platform (this assumption was also provided in the guided instructions).
 ![Subscriptions x days after registration](images/Subscriptions_after_number_of_days_after_registration.png?raw=true "Subscriptions x days after registration")
+
+## Data modeling & ML-ready dataset building
+
+From the last insight, I decided to build the ML-ready dataset based on student registration and their behavior for the next 14 days. The target variable being the Boolean “subscribed” during this 14 days period.
+
+## Choice of evaluation metric
+
+As I get eventually a very imbalanced classification (6% who subscribed/94% who did not subscribe), I have to choose the right evaluation metric. Accuracy should not be used as any naïve algorithm that would predict “100% student did not subscribe” would get around a 94% accuracy… 
+
+I used the recall metric instead. I could have used other metrics for imbalanced dataset such as imbalanced accuracy, F1 or F2 score. Recall is the fraction of subscribed students that are successfully retrieved (TP/(TP+FN)).
+
+The other tricks for imbalanced classification to preserve the same ratio of the target variable in different sets are:
+-	stratified splits for train/test split
+-	stratified K fold for validation
+
+## Model building
+
+I evaluated 4 classifiers: 
+-	Logistic regression
+-	KNN
+-	Random Forest
+-	LightGBM
+
+
+
+## Final comments
+
+What I could have done (if time permits):
+-	During EDA, I haven’t performed any hypothesis testing.
+-	During preprocessing, 
+-	Oversampling
+
+I am wondering if 365 Data Science experiment A/B testing: does gamifications increased engagements and then subscriptions?
