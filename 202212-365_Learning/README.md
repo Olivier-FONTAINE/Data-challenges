@@ -75,7 +75,6 @@ Here are all pairplots for all features couples:
 
 ![All relationships](images/Relationships_between_variables.png?raw=true "All relationships")
 
-💡 Watched days and engagement seems correlated.
 
 ## Choice of the evaluation metric
 
@@ -89,7 +88,11 @@ The other tricks for imbalanced classification to preserve the same ratio of the
 
 ## Pre-processing
 
-Features are not on the same scale.
+Features are not on the same scale:
+
+![Features scales](images/Features_scale.png?raw=true "Features scales")
+
+💡 We will apply features scaling in our ML pipeline in order to have features on the same scale for most of our ML algorithms. 
 
 ## Model building
 
