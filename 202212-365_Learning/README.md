@@ -48,7 +48,7 @@ From the last insight, I decided to build the ML-ready dataset based on student 
 
 ## Exploratory Data Analysis (ML-ready dataset)
 
-The target variable (subscribed) is very imbalanced:
+💡 The target variable (subscribed) is very imbalanced:
 - 6% of the students subscribed within the first 14 days after registration
 - 94% did not
 
@@ -60,7 +60,7 @@ Here are the relationships between the target variable and 2 others variables:
 
 ![Target variable & Average exams score & Number of days with videos](images/Corr_target_var_and_avg_exam_res_and_watch_days.png?raw=true "Target variable & Average exams score & Number of days with videos")
 
-We can see that the more you watch videos, the more you convert to a paid subscriber. 
+💡 We can see that the more you watch videos, the more you convert to a paid subscriber. 
 There seems to be also a link with the average exams score.
 
 Here is the correlation matrix:
